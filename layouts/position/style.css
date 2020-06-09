@@ -1,0 +1,30 @@
+div {
+
+}
+
+.rouge {
+    background-color: red;
+}
+
+.verte {
+    background-color: green;
+    position: relative;
+    left: 100px;
+    top: 100px;
+}
+
+.rose {
+    background-color: deeppink;
+}
+
+.jaune {
+    background-color: yellow;
+}
+
+.bleu {
+    background-color: darkblue;
+}
+
+.teal {
+    background-color: teal;
+}
