@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Formation HTML5 &amp; CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div>
+
+<header id="header">
     <h1>HTML5 &amp; CSS3</h1>
     <h2>Nouveautés</h2>
-    <div>
+    <nav>
         <a href="#">Accueil</a>
         <a href="#">Contact</a>
         <a href="#">Aides</a>
-    </div>
-</div>
+    </nav>
+</header>
 
-<div>
-    <div class="menu">
+<div id="colGauche">
+    <nav class="menu">
         <a href="#fable">Cigale et Fourmi</a>
         <a href="#illustration">Illustration</a>
         <a href="#telechargement">Téléchargement</a>
@@ -24,15 +26,15 @@
         <a href="#media">Média</a>
         <a href="#population">Population</a>
         <a href="#inscription">Inscription</a>
-    </div>
-    <div>
+    </nav>
+    <aside>
         <h2>Dicton du Jour</h2>
         <p>Le vent de novembre arrache la dernière.</p>
-    </div>
+    </aside>
 </div>
 
-<div>
-    <div>
+<section id="contenu">
+    <article>
         <h2>La Cigale et la Fourmi</h2>
         <blockquote>
             La Cigale, ayant chanté tout l'été, se trouva fort dépourvue quand la bise fut venue: pas un seul petit
@@ -50,35 +52,46 @@
             <br/>- Vous chantiez ? j'en suis fort aise. Et bien, dansez maintenant.
         </blockquote>
         <p>
-            <!-- TODO -->
+            <cite>Jean de La Fontaine, Fables de La Fontaine, 1668.</cite>
+            <ins>2,5 &euro;</ins>
+            (<strong>-50%</strong>,
+            <del>5,00 &euro;</del>
+            )
         </p>
-    </div>
-    <div>
+    </article>
+    <article>
         <h2>Illustration</h2>
         <figure>
-            <img src=""/>
+            <img src="img/cigale-fourmi.jpg"/>
             <figcaption>Illustration de la fable La Cigale et la Fourmi</figcaption>
         </figure>
-    </div>
-    <div>
+    </article>
+    <article>
         <h2>Téléchargement</h2>
-        <!-- TODO -->
-    </div>
-    <div>
+        <ul>
+            <li>
+                <a href="doc/fable.pdf" download>Format PDF</a>
+            </li>
+            <li>
+                <a href="doc/fable.docx" download>Format Word</a>
+            </li>
+        </ul>
+    </article>
+    <article>
         <h2>Lien</h2>
         <a href="http://fr.wikipedia.org/wiki/La_Cigale_et_la_Fourmi" target="_blank">Wikipedia</a>
-    </div>
-    <div>
+    </article>
+    <article>
         <h2>Vidéo</h2>
-        <video controls src="">
+        <video controls src="media/ib.mp4">
             <span>Le format mp4 n'est aps supporté par votre navigateur</span>
         </video>
         <h2>Audio</h2>
-        <audio controls src="">
+        <audio controls src="media/tajabone.mp3">
             <span>Le format mp3 n'est aps supporté par votre navigateur</span>
         </audio>
-    </div>
-    <div>
+    </article>
+    <article>
         <h2>Population</h2>
         <table>
             <caption>Population des plus grandes villes de France</caption>
@@ -148,10 +161,10 @@
             </tr>
             </tfoot>
         </table>
-    </div>
-    <div>
+    </article>
+    <article>
         <h2>Inscription</h2>
-        <form method="post" >
+        <form method="post">
             <label for="nom">Nom *</label>
             <input type="text" id="nom" name="nom" required/>
             <br/>
@@ -192,10 +205,11 @@
             <button type="submit">Envoyer</button>
             <button type="reset">Effacer</button>
         </form>
-    </div>
-</div>
+    </article>
+</section>
+
 <div id="pied">
-    <span>7 bis Avenue Jacques Cartier, Saint Herblain</span>
+    <address>7 bis Avenue Jacques Cartier, Saint Herblain</address>
 </div>
 
 </body>
