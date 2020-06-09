@@ -1,24 +1,29 @@
 div {
-
+    width: 100px;
+    height: 100px;
 }
 
 .rouge {
     background-color: red;
+    position: static;
 }
 
 .verte {
     background-color: green;
     position: relative;
-    left: 100px;
-    top: 100px;
+    left: 200px;
 }
 
 .rose {
     background-color: deeppink;
+    position: fixed;
 }
 
 .jaune {
     background-color: yellow;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .bleu {
@@ -27,4 +32,11 @@ div {
 
 .teal {
     background-color: teal;
+}
+
+header{
+    width: 100%;
+    background-color: darkgray;
+    height: 400px;
+    position: relative;
 }
