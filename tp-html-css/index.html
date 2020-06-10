@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Formation HTML5 &amp; CSS3</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
-<header id="header">
-    <h1>HTML5 &amp; CSS3</h1>
-    <h2>Nouveautés</h2>
+<header id="header" class="bandeau">
+    <h1>html5 &amp; css3</h1>
+    <h2>nouveautés</h2>
     <nav>
         <a href="#">Accueil</a>
         <a href="#">Contact</a>
@@ -35,7 +35,7 @@
 
 <section id="contenu">
     <article>
-        <h2>La Cigale et la Fourmi</h2>
+        <h2 id="fable">la cigale et la courmi</h2>
         <blockquote>
             La Cigale, ayant chanté tout l'été, se trouva fort dépourvue quand la bise fut venue: pas un seul petit
             morceau
@@ -60,14 +60,14 @@
         </p>
     </article>
     <article>
-        <h2>Illustration</h2>
+        <h2 id="illustration">Illustration</h2>
         <figure>
-            <img src="img/cigale-fourmi.jpg"/>
+            <img src="img/cigale-fourmi.jpg" alt="Illustration de la fable La Cigale et la Fourmi"/>
             <figcaption>Illustration de la fable La Cigale et la Fourmi</figcaption>
         </figure>
     </article>
     <article>
-        <h2>Téléchargement</h2>
+        <h2 id="telechargement">Téléchargement</h2>
         <ul>
             <li>
                 <a href="doc/fable.pdf" download>Format PDF</a>
@@ -78,11 +78,11 @@
         </ul>
     </article>
     <article>
-        <h2>Lien</h2>
+        <h2 id="lien">Lien</h2>
         <a href="http://fr.wikipedia.org/wiki/La_Cigale_et_la_Fourmi" target="_blank">Wikipedia</a>
     </article>
     <article>
-        <h2>Vidéo</h2>
+        <h2 id="media">Vidéo</h2>
         <video controls src="media/ib.mp4">
             <span>Le format mp4 n'est aps supporté par votre navigateur</span>
         </video>
@@ -92,7 +92,7 @@
         </audio>
     </article>
     <article>
-        <h2>Population</h2>
+        <h2 id="population">Population</h2>
         <table>
             <caption>Population des plus grandes villes de France</caption>
             <thead>
@@ -163,7 +163,7 @@
         </table>
     </article>
     <article>
-        <h2>Inscription</h2>
+        <h2 id="inscription">Inscription</h2>
         <form method="post">
             <label for="nom">Nom *</label>
             <input type="text" id="nom" name="nom" required/>
@@ -208,9 +208,9 @@
     </article>
 </section>
 
-<div id="pied">
+<footer id="pied">
     <address>7 bis Avenue Jacques Cartier, Saint Herblain</address>
-</div>
+</footer>
 
 </body>
 </html>
